@@ -1,3 +1,6 @@
+
+import sys
+
 class ReverseAndJoin(object):
 
 """
@@ -5,11 +8,11 @@ Program that takes input integer N, which dictates N lines of input sentences.
 Program will reverse each word in each sentence, returning a joined result. 
 """
     
-    def getInput(self):
-        #Get User Input
-        N = int(input("Enter a number"))
-        if N.isnumeric():
-            return N
+  def getInput(self):
+        # Get User Input
+        N = input("Enter a number")
+        if N.isdigit():
+            return int(N)
         else:
             raise ValueError("Please enter an integer value")
             getInput()
